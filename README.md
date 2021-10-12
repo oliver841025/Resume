@@ -48,11 +48,11 @@ Hi 大家好，我是黃靖軒，目前為前端工程領域的新鮮人，目�
 
 - **大奶微微：**
 
+  因應日益蓬勃的線上訂購飲料需求，我們實作了一個飲料訂購網站，可以搜尋到住家附近特定飲料店，成為會員，依據喜好下單，也可申請成為商家，使用 CRUD 功能，手機或電腦版皆可使用。
+
   - [網站連結](https://main.d318dyc2vbskcy.amplifyapp.com/)
   - [概念影片說明](https://www.youtube.com/watch?v=wSeCTs_L-9c)
   - [原始碼連結](https://github.com/Lindsay0214/Da-Nai-Wei-Wei-front-end)
-
-    因應日益蓬勃的線上訂購飲料需求，我們實作了一個飲料訂購網站，可以搜尋到住家附近特定飲料店，成為會員，依據喜好下單，也可申請成為商家，使用 CRUD 功能，手機或電腦版皆可使用。
 
   - 使用 Photoshop / Illustrator 製作 logo 並使用 Figma 製作 Wireframe / Prototype
   - 透過 Sequelize / Express 等技術與概念，規劃製作後端資料庫
