@@ -22,7 +22,7 @@ Hi 大家好，我是黃靖軒，前端工程領域的新鮮人，目前正在�
     - React : React Hook、React Router、React Context、React Query、styled-components
     - Redux
   - **其他**
-    - 使用 Git / GitHub 與他人協作專案
+    - 使用 Git / GitHub 與他人協作專案，GitHub flow 流程
     - npm / yarn
 
 - ### 後端技能：
