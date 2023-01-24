@@ -1,89 +1,54 @@
 ## 簡介
 
-Hi 大家好，我是黃靖軒，目前為 Junior 前端工程師（React）。過去曾為動畫以及平面設計師，但對電腦科學、網際網路領域始終感到好奇，因緣際會接觸到前端工程，覺得能寫出功能無疑是真的在創造、改進一件事的核心，也以成為合格的資深前端工程師為目標前進著，目前任職於 CKEX 交易所。
+Hi 你好，我是黃靖軒，前端工程師（React），過去曾任職於交易所約 1.2y。
 
-在團隊協作中願意主動溝通、訂立時程、釐清需求，也能獨立完成專案功能的前端工程師。
+### 發問與分享的環境
+願意主動分享新知、新技術，認為討論是大家進步最快的方式，在講解概念時，最好不使用到專有名詞來解釋，將自己回歸白紙的思考，就會知道該如何去分享新知，也以此指導過新進同仁，在工作上也逐步看到成長，發問時也能先定義好問題邊界，提出自己認為的可能解法來做討論。
+
+### 多人協作
+熟悉 git 多人協作，多人環境協做下，知道何時該 pull, push, 規範每一次的 commit message 甚至是分支名稱, 解衝突, rebase, cherry-pick....等，主要是對於普遍的 git / gitlab 協作沒有問題，遇過沒處理過的狀況也能跟別人討論或是上網爬文而推敲出方向。
+
+在前公司也有跑 gitflow，大致如下 :
+- production: 發布用分支，會處在 production-ready 的狀態，禁止直接 commit 到此分支，也因為是穩定版本，會於此分支上的 commit 貼上版本標籤。
+- develop: 開發用分支，所有的開發分支會從此分支切出去，開發完成再合併回來，而需要發布時，需要將 develop 合併進 production。
+- hotfix: 修復用分支，從 production 切出來，修復完合併進 production 跟 develop。
+- pre-production: 測試用分支，從 develop 切出來，主要給 ts 做測試。
+- feature: 新增功能分支，從 develop 切出來，完成後再合併回 develop。
+
+### 跨部門溝通
+再更過去曾擔任過設計師，知道跟 UI 設計師該如何有效溝通，或是以他們的角度提出可能的解法，再來有開過資料庫，寫過 node.js 跟 Express，瞭解資料從後端傳遞到前端的流程，能有效跟後端討論 API 規格，在減少 server 負擔下，跟前端網頁效能間做個最適當的解法，也會盡量了解 API 再做串接。
+
+### 職涯中的期許
+主要是在工作上偶爾會記錄下一些比較深刻的狀況，大多是需要爬文做研究、跟別人討論的，可以從這邊看到一些:
+- [React 多環境建置開發](https://medium.com/@oliver8410252594/react-%E5%A4%9A%E7%92%B0%E5%A2%83%E5%BB%BA%E7%BD%AE%E9%96%8B%E7%99%BC-fb9d30915b49)
+- [串接 Firebase SDK 做 Google OAuth 第三方登入](https://medium.com/@oliver8410252594/%E4%B8%B2%E6%8E%A5-firebase-sdk-%E5%81%9A-google-oauth-%E7%AC%AC%E4%B8%89%E6%96%B9%E7%99%BB%E5%85%A5-3b8f39752423)
+- [為什麼我們需要使用 Axios](https://medium.com/@oliver8410252594/%E7%82%BA%E4%BB%80%E9%BA%BC%E6%88%91%E5%80%91%E9%9C%80%E8%A6%81%E4%BD%BF%E7%94%A8-axios-d8e24fd34065)
+
+再來因為非本科系，但在工作後想了解更底層的事，有回北科大再去修習了資料結構、物件導向、線性代數等大學部的課，也都順利通過。在團隊協作中願意主動溝通、分享新知、釐清需求，也能獨立完成專案功能的前端工程師，期許能在未來五年中成為前端團隊的 tech lead。
 
 [線上版詳細履歷](https://www.cakeresume.com/oliver8410252594) 可以看這邊
 
-先前使用過的技術如下：
+簡單摘要先前工作使用過的技術如下：
+- React / Redux
+  基本使用 React hooks 沒有問題，基於效能優化，進階的 useMemo, useCallback 也使用過，專案從一開始使用 Redux，到後來由我提議使用 RTK 做狀態管理，畢竟 Redux 最讓人覺得麻煩的就是前置作業，也會有原則的整理 custom hooks。
 
-- ### 前端技能：
+- Axios
+  打 API 時為了更好的封裝與統一整理 API，使用 Axios 取代原生 fetch 寫法
 
-  - **HTML & CSS**
-    - 排版：Flexbox
-    - Bootstrap
-    - SASS
-  - **JavaScript**
-    - ES6
-    - Ajax requests
-    - API 串接
-    - React : React Hook、React Router、React Context、React Query、styled-components
-    - Redux
-  - **其他**
-    - 使用 Git / GitHub 與他人協作專案，GitHub flow 流程
-    - npm / yarn
+- UI Library
+  能快速使用現有 UI Library 打造網站樣式，之前主要是使用 Ant design 做後臺系統，需要比較客製的部分，可以上網爬文做處理。
+  
+- 第三方服務
+  使用 Firebase 做第三方登入，根據不同會員身分做權限控管(JWT)，使用 cloudStorage 做部署。
+  
+- 多環境建置
+  刪除不必要的打 API 部分，根據不同環境寫 script，避免人為操作失誤。
 
-- ### 後端技能：
-  - **PHP & MySQL**
-    - 會員系統建立，使用 session 及 password hash
-    - 熟悉 SQL injection / XSS / CSRF 並防範
-  - **Node.js**
-    - 搭配使用 Express
-    - 使用 EJS 建立網頁
-    - 使用 Sequelize ODM 操作資料庫
-  - **部署**
-    - AWS
-    - Heroku
-- ### 團隊協作：
-
-  - 實作 + 串接 RESTful API
-  - 跑過 Scrum
-  - 使用 Trello 開票領票、排定時程
-  - 使用 Figma 設計 Prototype 並與其他人溝通使用
-
-## 工作經歷：
-
-- 展覽工作室 展場平面 / 展場動態影像 一年
-
-  主要承包故宮、台博、台史博等國內較為傳統大型的展場做整體規劃，期間多負責平面（DM、講解區塊卡）與動態（入口動態影像、展覽需要的虛擬模型）需求
+其餘部分例如資料處理、切版，日常都會做，這邊就不特別提及。
 
 ## 學歷：
 
 實踐大學設計系 - 3D 動畫組
-
-## 合作專案簡介
-- **1. 後台管理系統（開發中）(2022/4 ~)**
-
-讓公司 TS 可以著手進行測試與即時管理網站前台的系統，未來會再分享給其他平台做管理。
-
-  - 腳手架的規劃：目前身為第一人開發這專案，使用 React + Redux + Thunk +Sass 做開發，也將資料夾結構與狀態儲存地方分配的很適合他人上手，也同時進行文件 (readme) 的編寫，以利後續多人協作。
-  - 與後端團隊討論 API：與後端討論協調需要的 API 內容，同時評估是否可行，來回討論，能知道怎麼討論最有效果。
-
-  - 導入 Axios 優化 fetch api 部分：改善以往 dispatch action 跟 fetch api 會混在一起不好維護跟擴充的情況，獨立整理所有 api 出來成一個 api.js 以利後續，結合 thunk 大大優化程式碼結構，同時編寫技術紀錄 ( 為何我們需要使用 Axios )可供參考。
-
-  - 透過 React Hook / Redux / RWD 等技術與概念，實作前端頁面
-
-- **2. 大奶微微 (2021/7 ~ 2021/8）**
-
-  因應日益蓬勃的線上訂購飲料需求，我們實作了一個飲料訂購網站，可以搜尋到住家附近特定飲料店，成為會員，依據喜好下單，也可申請成為商家，使用 CRUD 功能，手機或電腦版皆可使用。
-
-  - [網站連結](https://main.d318dyc2vbskcy.amplifyapp.com/)
-  - [概念影片說明](https://www.youtube.com/watch?v=wSeCTs_L-9c)
-  - [原始碼連結](https://github.com/Lindsay0214/Da-Nai-Wei-Wei-front-end)
-
-  - 使用 Photoshop / Illustrator 製作 logo 並使用 Figma 製作 Wireframe / Prototype
-  - 透過 Sequelize / Express 等技術與概念，規劃製作後端資料庫
-  - 實作 RESTful API 給自己串接
-  - 透過 React Hook / Redux / tailwind / RWD 等技術與概念，實作前端頁面
-  - 串接第三方金流 API，實作線上結帳功能
-  - 串接 Google Map API，實作住家附近搜尋功能
-  - 透過 React Query 的方式達成間隔一定時間重發 request 的需求，讓前後端結帳結果一致
-
-- 個人開發中，釐清需求與方向，評估時程，獨立完成開發項目後，紀錄下檢討與研究過程，供未來參考。
-- 團隊開發中，首先主動釐清需求，彙整成 User story 藉此確認每一項功能，也跟其餘開發者們透過 Figma 溝通 UI / UX 需求，也因為曾為設計師，線上曾做過網頁安全設計指南工作坊，後端部分也共同討論合適的 API Schema，並順利實作、串接完成，每次發 PR 必定互相 code review，適時提出問題與可能的解方，期間也都以 Scrum 方式在進行。
-
-整體而言，在團隊協作中願意主動溝通、訂立時程、釐清需求，也能獨立完成專案功能的前端工程師。
 
 ## 工作地點
 
